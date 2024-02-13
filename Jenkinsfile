@@ -4,13 +4,13 @@ pipeline {
     stages { 
         stage('compile') { 
             steps { 
-                sh 'javac test.java' 
+                bat 'javac test.java' 
             }
         }
         
         stage('run') { 
             steps { 
-                sh 'java test' 
+               bat 'java test' 
             }
         }
     }
